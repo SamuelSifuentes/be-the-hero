@@ -15,8 +15,9 @@ module.exports = {
             'ongs.name',
             'ongs.whatsapp',
             'ongs.city',
-            'ongs.uf']);
-        response.header('X-Total-Cont',count['count(*)'])
+            'ongs.uf',
+            'ongs.email']);
+        response.header('X-Total-Count',count['count(*)'])
         return response.json(
             incidents
         );
